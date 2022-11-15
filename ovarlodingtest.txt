@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
+public class ovarlodingtest 
+{
+
+    public static void main(String[] args) 
+    {
+        int n ;
+        String []ne =new String [4];
+        float []ent = new float[4] ;
+
+        ovarloding ob = new ovarloding();
+        ovarloding []ob2 = new ovarloding[4];
+
+        //ovarloding ob2 = new ovarloding();
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number : ");
+        n=input.nextInt();
+//input.close();
+           
+        
+            ob.add(n);//number
+        
+        ovarloding.add2();//neme
+        ovarloding.add3();//addes
+
+     System.out.print("Enter entry : ");
+     for (int i = 0; i < ent.length; i++) {
+        ent[i] =input.nextFloat();
+ 
+     }
+     ob.add4(ent);
+     ob.dispaly();
+    
+
+
+
+
+
+    }
+
+}
