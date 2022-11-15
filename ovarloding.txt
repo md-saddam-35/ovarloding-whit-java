@@ -1,0 +1,56 @@
+import java.net.SocketTimeoutException;
+import java.util.Scanner;
+
+public class ovarloding {
+    int number;
+    static String neme;
+    static String addes;
+    float[] entry = new float[4];
+
+   
+    void add(int number) { // number
+        this.number = number;
+
+    }
+
+    static void add2() {
+        Scanner input = new Scanner(System.in); // neme
+        System.out.print("Enter neme :");
+        neme = input.nextLine();
+
+    }
+
+    static void add3() {
+        Scanner input = new Scanner(System.in); // addes
+
+        System.out.print("Enter addes :");
+        addes = input.nextLine();
+
+    }
+
+    void add4(float[] entry) { // entry
+
+        this.entry = entry;
+    }
+
+void dispaly(){
+System.out.println("number:"+number);
+System.out.println("neme  :"+neme);
+System.out.println("addes :"+addes);
+System.out.print("entry : ");  
+for (int i = 0; i <entry.length; i++) {
+    System.out.print("\t"+ entry[i]);  
+
+}
+
+
+System.out.println("\n");
+
+
+
+
+
+}
+
+
+}
